@@ -1,0 +1,69 @@
+.house-cards h1 {
+  font-family: 'Lobster', sans-serif;
+  text-align: center;
+}
+
+.house-cards {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.house-cards .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.house-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(2, 91, 255, 0.17);
+}
+
+.house-cards .card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.house-details {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.house-details .price span {
+  color: rgb(255, 0, 0);
+}
+.house-details .contactAgent {
+  border: none;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  border-radius: 4px;
+  padding: 8px 14px;
+}
+
+.singlehome {
+  text-decoration: none;
+}
+
+.house-detail {
+  text-align: center;
+}
+
+@media (max-width: 868px) {
+  .house-details {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .house-cards .cards {
+    grid-template-columns: 1fr;
+  }
+}

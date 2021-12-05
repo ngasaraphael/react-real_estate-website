@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+.navigation {
+  background-color: rgb(110, 2, 2);
+  z-index: 99;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo-link {
+  color: white;
+  width: 200px;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item-link {
+  color: white;
+  text-decoration: none;
+}
+
+.get-app {
+  background-color: rgb(192, 7, 7);
+  padding: 4px 8px;
+  margin-right: 60px;
+  border-radius: 3px;
+}
+
+.get-app:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.menu-bar {
+  display: none;
+}
+
+.fa-times,
+.fa-bars {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .navbar.mobile {
+    height: 100vh;
+  }
+
+  .logo-link {
+    width: 200px;
+  }
+
+  .nav-list {
+    display: block;
+  }
+
+  .nav-list.mobile {
+    display: none;
+  }
+
+  .get-app {
+    background-color: rgb(110, 2, 2);
+    padding: 0px;
+  }
+
+  .get-app:hover {
+    background-color: rgb(110, 2, 2);
+  }
+
+  .nav-item {
+    padding: 40px 0 0 0;
+  }
+
+  .logo-link {
+    position: absolute;
+    top: 30px;
+  }
+
+  .menu-bar {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
